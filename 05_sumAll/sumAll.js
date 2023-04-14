@@ -15,7 +15,7 @@ const sumAll = function(num1,num2) {
         return sum;
      }else if(typeof(num2)==String){
         return "ERROR";
-     }else if(typeof(num1)!=Number||typeof(num2)!=Number){
+     }else if(!Number.isInteger(num1) || !Number.isInteger(num2)){
         return "ERROR"
      }
      else{
